@@ -1,58 +1,61 @@
-// EQUALITY OPERATORS
-  // > (greater than)
-  // < (less than)
-  // >= (greather than or equal)
-  // <= (less than or equal)
-  // == (equality)
-    // checks for equality of any value, but not equality of type
-    // it coerces both values to the same type and then compares them
-    // this can lead to some unexpected results
+//////////   EQUALITY OPERATORS   //////////
+// > (greater than)
+// < (less than)
+// >= (greather than or equal)
+// <= (less than or equal)
+// == (equality)
+// checks for equality of any value, but not equality of type
+// it coerces both values to the same type and then compares them
+// this can lead to some unexpected results
 7 == '7' // --> true
 0 == '' // --> true
 0 == false // --> true
 null == undefined // --> true
-  // != (not equal)
-  // === (strict equality)
-    // checks for equality of value and type
+// != (not equal)
+// === (strict equality)
+// checks for equality of value and type
 5 === 5 // --> true
 10 === '10' // --> false
 0 === false // --> false
-  // !== (strict non-equality)
+// !== (strict non-equality)
 
-// TRUTHY AND FALSY VALUES
-  // Falsy values
-    // false
-    // 0
-    // '' (empty string)
-    // null
-    // undefined
-    // NaN
-  // Truthy values
-    // Everything else
 
-// LOGICAL OPERATORS
-  // && (and)
-  // || (or)
-  // ! (not)
+//////////   TRUTHY AND FALSY VALUES   //////////
+// Falsy values
+//    false
+//    0
+//    '' (empty string)
+//    null
+//    undefined
+//    NaN
+// Truthy values
+//    Everything else
 
-// OPERATOR PRECEDENCE
+//////////   LOGICAL OPERATORS   //////////
+// && (and)
+// || (or)
+// ! (not)
+
+
+//////////   OPERATOR PRECEDENCE   //////////
 // ! takes precedence over && which takes precedence over ||
 let x = 7
 x === 7 || x === 3 && x > 10
 // can be written like this
 x == 7 || (x === 3 && x > 10) // --> true
-// if we want to evaluate the statement from left to right
-(x === 7 || x === 3) && x > 10 // --> false
+  // if we want to evaluate the statement from left to right
+  (x === 7 || x === 3) && x > 10 // --> false
 
-// TERNARY OPERATOR
-  // Syntax: condition ? expIfTrue: ExpIfFalse
-let status = 'offline'
-let color = status === 'offline' ? 'red': 'green'
-let msg = `since status is ${status}, color is ${color}`
+
+//////////   TERNARY OPERATOR   //////////
+// Syntax: condition ? expIfTrue: ExpIfFalse
+let status_ = 'offline'
+let color = status_ === 'offline' ? 'red' : 'green'
+let msg = `since status is ${status_}, color is ${color}`
 console.log(msg);
 
 
-// IF STATEMENT
+//////////   IF STATEMENT   //////////
 let rating = 5
 if (rating === 3) {
   console.log('You are above exppectations')
@@ -64,7 +67,8 @@ else {
   console.log('else clause triggered')
 }
 
-// NESTED IF STATEMENT
+
+//////////   NESTED IF STATEMENT   //////////
 let password = 'cat dog'
 
 if (password.length >= 6) {
@@ -80,7 +84,9 @@ else {
   console.log('Password is too short')
 }
 
-// SWITCH STATEMENT
+
+//////////   SWITCH STATEMENT    //////////
+// 
 day = 3
 
 switch (day) {
