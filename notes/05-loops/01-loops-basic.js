@@ -11,7 +11,7 @@ for (let i = 0; i < animals.length; i++) {
   console.log(animals[i]);
 }
 
-// Looping over the array using a for of loop
+//////////   FOR OF LOOP (NEW IN JAVASCRIPT)   //////////
 for (let animal of animals) {
   console.log(animal);
 }
@@ -27,7 +27,7 @@ const gameBoard = [
 
 let total_score = 0
 for (let i = 0; i < gameBoard.length; i++) {
-  row = gameBoard[i]
+  let row = gameBoard[i]
   for (let j = 0; j < row.length; j++) {
     total_score += row[j]
   }
@@ -108,5 +108,3 @@ while (target !== guess) {
 }
 //console.log(`Target: ${target}, Guess: ${guess}`)
 
-
-// FOR OF LOOP
